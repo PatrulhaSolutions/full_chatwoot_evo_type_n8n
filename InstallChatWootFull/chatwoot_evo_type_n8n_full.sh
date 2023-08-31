@@ -30,17 +30,6 @@ cd
 
 sleep 3
 
-sudo -u postgres psql
-
-\c chatwoot_production
-
-update installation_configs set locked = false;
-
-\q
-
-cd
-
-sudo systemctl restart chatwoot.target
 #######################################################
 
 wget https://repositorio.patrulhasolutions.cloud/evo_typebot_n8n.sh --no-check-certificate
